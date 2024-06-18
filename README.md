@@ -43,19 +43,19 @@ intended to be fancy styled because I was focused on the tasks that are related 
 In this task, I have deployed a static website on the Azure Blob Storage. With the enabled static website, I
 received the link and tested if the static website is available. You can see on the screenshot below that
 the link is working:
-![Screenshot of the Static Website](./media/diagram-sharesafely.png)
+![Screenshot of the Static Website](./media/static-website.png)
 
 ## ☁️ Step 3 - HTTPS
 
 In this task, I have deployed Azure Front Door and configured the properties.
 I used the following Microsoft documentation to do this task: https://learn.microsoft.com/en-us/azure/frontdoor/integrate-storage-account
-![Screenshot of the Azure Front Door](./media/diagram-sharesafely.png)
+![Screenshot of the Azure Front Door](./media/azure-front-door.png)
 
 ## ☁️ Step 4 - Configuring Azure DNS
 
 So, in this task I have signed up a custom domain using GoDaddy and configured it with the Azure DNS & Azure Front Door.
 In the screenshot below, you can see the overview of the configuration for the Azure Front Door.
-![Azure Front Door](./media/diagram-sharesafely.png)
+![Azure Front Door](./media/azure-front-door.png)
 
 You can check the custom domain by the following link: [www.cloudresumeadmir.xyz](https://www.cloudresumeadmir.xyz/)
 This is the custom domain that I'm using and the endpoint goes like this: resumechallenge-g3gkgjaecrezbqdr.z01.azurefd.net
@@ -81,7 +81,7 @@ I edited the HTML File with the following script:
           </script>
 
 You can see on the short gif below that the Visitor Counter is working.
-![Testing the Vistor Counter Function](./media/diagram-sharesafely.png)
+![Testing the Vistor Counter Function](./visitor-counter-function.gif)
 
 The function didn't work at first so I had to configure the properties in the Azure Function to make it work.
 One of the reasons why my function didn't work was because the function wasn't set to "anonymous".
@@ -91,7 +91,7 @@ One of the reasons why my function didn't work was because the function wasn't s
 In this task, I  deployed CosmosDB and used TableAPI to retreive and update its coint in database.
 I also used serverless capacity mode for less payment, becasue I don't store or retreive that much data.
 On the gif below, you will see that visitor counter is retreived by the Azure CosmosDB.
-![CosmosDB Table API Counter](./media/diagram-sharesafely.png)
+![CosmosDB Table API Counter](./media/cosmos-db-retreive.gif)
 
 You can see the following example of the function code below:
 
@@ -144,14 +144,14 @@ only support for Linux. After that I have deployed the new Azure Function App wi
 You can see on the screenshot below, that the deployment was successful:
 I used the following command to deploy thej function: func azure functionapp publish functionpython1113 --force
 
-![Testing the Vistor Counter Function](./media/diagram-sharesafely.png)
+![Testing the Vistor Counter Function](./media/python-deployment.png)
 
 Also, after this task, I have reseached about the python tests and how they are performed.
 
 ## ☁️ Step 8 - Infrastructure as Code
 
 So in this task, I have developed an ARM template that will deploy Data Storage Account, Azure Function & Azure CosmosDB.
-![Preview the ARM Template](./media/diagram-sharesafely.png)
+![Preview the ARM Template](./media/template2.txt)
 
 ## ☁️ Step 9 - Source Control 
 
@@ -164,11 +164,11 @@ I encountered with the some commands for the first time.
 
 In this task, I set up GitHub Actions such that when you push an update to your ARM template. If the tests pass, the ARM application should get packaged and deployed to Azure.
 You can preview the YAML file and template file on the link below:
-![YAML file](./media/diagram-sharesafely.png)
-![ARM Template](./media/diagram-sharesafely.png)
+![YAML file](https://github.com/akurtic1/deploy-CI-CD/blob/main/.github/workflows/deploy-arm-template.yml)
+![ARM Template](./media/template2.txt)
 
 You can also preview the screenshot below of the deployment:
-![Deployment - Azure Resources](./media/diagram-sharesafely.png)
+![Deployment - Azure Resources](./media/deployment-backend.png)
 
 This template deploys resources such as: Function App, Azure CosmosDB, Storage Account...
 
@@ -177,6 +177,6 @@ This template deploys resources such as: Function App, Azure CosmosDB, Storage A
 So in this task, I set up a GitHub actions where when we deploy some files they will be automatically added
 into the Azure Storage Account which I had to set up in the .yaml file.
 You can preview the YAML file on the link below:
-![YAML file](./media/diagram-sharesafely.png)
+![YAML file](https://github.com/akurtic1/CI-CD-Frontend/blob/main/deploy.yml)
 
 
