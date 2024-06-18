@@ -11,8 +11,9 @@ The Cloud Resume Challenge is hosted on this domain: https://www.cloudresumeadmi
 
 ## 🌟 Introduction
 
-This project is intended to be used for a securly uploading files to Azure Blob Storage.
-![Diagram of the architecture tasks](./media/diagram-sharesafely.png)
+The Cloud Resume Challenge is for anyone looking to level up their cloud skills, whether you're a seasoned professional or new to the cloud. 
+Originally created by Forrest Brazeal, this challenge offers a personal and community-driven approach to mastering cloud technologies.
+![Diagram of the architecture tasks](./media/app-grp.png)
 
 ## ✨ Features
 
