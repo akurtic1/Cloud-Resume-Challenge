@@ -151,7 +151,7 @@ Also, after this task, I have reseached about the python tests and how they are 
 ## ☁️ Step 8 - Infrastructure as Code
 
 So in this task, I have developed an ARM template that will deploy Data Storage Account, Azure Function & Azure CosmosDB.
-![Preview the ARM Template](./media/template2.txt)
+![Preview the ARM Template](https://github.com/akurtic1/Cloud-Resume-Challenge/blob/15c41df3cda4c5a71f2f70d586b8d067a7bbb843/media/template2.txt)
 
 ## ☁️ Step 9 - Source Control 
 
