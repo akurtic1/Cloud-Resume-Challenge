@@ -66,6 +66,7 @@ Also, I have configured in the Azure Front Door Manager that only HTTPS protocol
 
 In this task, I have deployed Azure Functions App and Azure Data Storage Service.
 I edited the HTML File with the following script: 
+```
         <script>
             async function fetchVisitorCount() {
                 try {
@@ -79,7 +80,7 @@ I edited the HTML File with the following script:
           
             document.addEventListener('DOMContentLoaded', fetchVisitorCount);
           </script>
-
+```
 You can see on the short gif below that the Visitor Counter is working.
 ![Testing the Vistor Counter Function](./visitor-counter-function.gif)
 
@@ -135,10 +136,11 @@ In this task, for the first time I encountered with Python and I used some of th
 I had an issiue with the python because "Python -m" didn't work so I figured it out that I have to use "py" instead of "python".
 
 First, I used the command to create the Virtual Environment "py -m venv myenv"
+```
 After previous step, I installed Azure SDK packages:
 + pip install azure-functions
 + pip install azure-cosmos
-
+```
 After working on Python Function, I couldn't deploye the function to Azure because python functions are
 only support for Linux. After that I have deployed the new Azure Function App with version for Python.
 You can see on the screenshot below, that the deployment was successful:
